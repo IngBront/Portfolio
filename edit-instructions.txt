@@ -1,0 +1,79 @@
+bront400 website edit instructions
+=================================
+
+This project is static (plain HTML + CSS + JS).
+No frameworks and no binary image assets are included by default.
+
+IMPORTANT ABOUT /images PLACEHOLDERS
+------------------------------------
+- The /images folder currently contains placeholder files named:
+  photo-1.jpg, photo-2.jpg, ...
+- These are text placeholders so the repo stays lightweight.
+- Replace each placeholder file with your real photo file, using the same filename.
+
+1) How to replace images
+------------------------
+- Open the /images folder.
+- Pick a placeholder (example: photo-1.jpg).
+- Replace it with your real image file and keep the same name.
+- Or add your own filename, then update the matching HTML src/href paths.
+
+2) How to change the site title "bront400"
+-------------------------------------------
+- Open each HTML file.
+- Change header brand text:
+  <a class="brand" ...>bront400</a>
+- Change tab title text:
+  <title>bront400 — ...</title>
+- Optional: change footer text "© bront400".
+
+3) How to change menu items
+---------------------------
+- In every HTML page, find:
+  <nav class="main-nav"> ... </nav>
+- Menu links look like:
+  <li><a href="gallery-1.html">Work</a></li>
+- Edit labels and links as needed.
+- Keep menus consistent across all pages.
+
+4) How to edit text on the contact page
+---------------------------------------
+- Open contact.html.
+- Edit text inside <section class="contact-block">.
+- Update email and Instagram links.
+
+5) How to add or remove gallery images
+--------------------------------------
+- Open a gallery page (gallery-1.html, etc.).
+- In <section class="gallery-grid"> each image block is:
+  <a href="images/photo-X.jpg" data-lightbox-trigger>
+    <img src="images/photo-X.jpg" alt="..." />
+  </a>
+- Copy one block to add a photo.
+- Delete one block to remove a photo.
+
+6) How to create an extra gallery page
+--------------------------------------
+- Copy an existing gallery page (for example gallery-4.html).
+- Rename it (for example gallery-5.html).
+- Update title, heading, and image list.
+- Add the new link in the nav menu on all pages.
+
+7) Which files control layout and styling
+-----------------------------------------
+- Pages/content:
+  index.html
+  gallery-1.html
+  gallery-2.html
+  gallery-3.html
+  gallery-4.html
+  contact.html
+- Styling:
+  css/style.css
+- Interactions (menu + lightbox):
+  js/main.js
+
+GitHub-ready note
+-----------------
+- This repo is ready to push without binary assets.
+- Just replace placeholders in /images with your real images after cloning.
