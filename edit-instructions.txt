@@ -1,0 +1,77 @@
+bront400 website edit instructions
+=================================
+
+This project is static (plain HTML + CSS + JS).
+No frameworks and no bundled photo assets are included.
+
+IMPORTANT ABOUT /images
+-----------------------
+- The /images folder contains only `README.txt` by default.
+- Add your own photo files manually (for example: photo-1.jpg, photo-2.jpg).
+- The HTML is already set up to use names like photo-1.jpg, photo-2.jpg, etc.
+
+1) How to add/replace images
+----------------------------
+- Put your real photos in the /images folder.
+- Use names that match HTML references, like photo-1.jpg.
+- If your file names are different, edit the HTML `src` and `href` values.
+
+2) How to change the site title "bront400"
+-------------------------------------------
+- Open each HTML file.
+- Change header brand text:
+  <a class="brand" ...>bront400</a>
+- Change tab title text:
+  <title>bront400 — ...</title>
+- Optional: change footer text "© bront400".
+
+3) How to change menu items
+---------------------------
+- In every HTML page, find:
+  <nav class="main-nav"> ... </nav>
+- Menu links look like:
+  <li><a href="gallery-1.html">Work</a></li>
+- Edit labels and links as needed.
+- Keep menus consistent across all pages.
+
+4) How to edit text on the contact page
+---------------------------------------
+- Open contact.html.
+- Edit text inside <section class="contact-block">.
+- Update email and Instagram links.
+
+5) How to add or remove gallery images on a page
+-------------------------------------------------
+- Open a gallery page (gallery-1.html, etc.).
+- In <section class="gallery-grid"> each image block is:
+  <a href="images/photo-X.jpg" data-lightbox-trigger>
+    <img src="images/photo-X.jpg" alt="..." />
+  </a>
+- Copy one block to add a photo.
+- Delete one block to remove a photo.
+
+6) How to create an extra gallery page
+--------------------------------------
+- Copy an existing gallery page (for example gallery-4.html).
+- Rename it (for example gallery-5.html).
+- Update title, heading, and image list.
+- Add the new link in the nav menu on all pages.
+
+7) Which files control layout and styling
+-----------------------------------------
+- Pages/content:
+  index.html
+  gallery-1.html
+  gallery-2.html
+  gallery-3.html
+  gallery-4.html
+  contact.html
+- Styling:
+  css/style.css
+- Interactions (menu + lightbox):
+  js/main.js
+
+GitHub-ready note
+-----------------
+- This repo is ready to push without image binaries.
+- Add your real files to /images after cloning.
