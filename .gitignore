@@ -1,0 +1,7 @@
+# Keep repository code-only by default
+/images/*
+!/images/README.txt
+
+# OS / editor
+.DS_Store
+Thumbs.db

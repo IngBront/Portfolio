@@ -8,6 +8,7 @@ IMPORTANT ABOUT /images
 -----------------------
 - The /images folder contains only `README.txt` by default.
 - Add your own photo files manually (for example: photo-1.jpg, photo-2.jpg).
+- Note: `.gitignore` is set to ignore `/images/*` except `images/README.txt` by default.
 - The HTML is already set up to use names like photo-1.jpg, photo-2.jpg, etc.
 
 1) How to add/replace images
